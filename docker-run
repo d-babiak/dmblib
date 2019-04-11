@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+docker run \
+  --name bob-ross \
+  --hostname bob-ross \
+  -v "${PWD}:/bob-ross" \
+  --privileged -it --rm bob-ross bash
